@@ -19,4 +19,11 @@ class Red extends Colour{
 		return s;
 	}
 }
+class Yellow extends Colour{
+	protected Yellow getColour()
+	{
+		Yellow s=new Yellow();
+		return s;
+	}
+}
 }
