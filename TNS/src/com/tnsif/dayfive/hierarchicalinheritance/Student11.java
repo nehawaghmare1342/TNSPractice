@@ -2,44 +2,59 @@ package com.tnsif.dayfive.hierarchicalinheritance;
 
 public class Student11 extends Person{
 	
-	private String Class;
+	private String clas;
 	private float percent;
 	
+	
 	public Student11() {
-		System.out.println("Student class default constructor");
-		Class="FY";
+		System.out.println("Student class default constructor ");
+		clas="FY";
 		percent=70f;
 	}
 
+
+public void Student(String name, String city,String clas, float percent) {
+		
+		
+		super(class, percent);
 	
-	public Student11(String Class, float percent) {
-		super();
-		this.Class = Class;
-		this.percent = this.percent;
+		this.clas=clas;
+		this.percent = percent;
+	}
+
+	public String getClas() {
+		return clas;
 	}
 
 
-	public String getCLASS() {
-		return Class;
+	public void setClas(String clas) {
+		this.clas = clas;
 	}
 
-	public void setCLASS(String cLASS) {
-		Class = class;
-	}
 
 	public float getPercent() {
 		return percent;
 	}
+
 
 	public void setPercent(float percent) {
 		this.percent = percent;
 	}
 
 
-	public Student(String class, float percent) {
-		super();
-		this.Class=Class;
-				this.percent = percent;
+	
+
+
+	@Override
+	public String toString() {
+		return "Student [clas=" + clas + ", percent=" + percent + ", getName()=" + getName() + ", getCity()="
+				+ getClass() + "]";
+	}
+
+
+	private String getName() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	
