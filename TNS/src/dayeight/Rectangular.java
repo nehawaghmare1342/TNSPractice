@@ -7,7 +7,7 @@ public class Rectangular extends Square{
 	
 	public public Rectangular() {
 		
-
+ 
 	
 	public Rectangular(float width,float height) {
 		this.width=width;
